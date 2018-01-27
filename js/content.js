@@ -1,4 +1,4 @@
 var infoWindowContent = {
-    minsk:'<minsk>test1</minsk>', 
-    gomel:'<gomel>test2</gomel>'
+    minsk:'<minsk onclick="openNav()">test1</minsk>', 
+    gomel:'<gomel onclick="openNav()">test2</gomel>'
 };

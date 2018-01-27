@@ -1,7 +1,9 @@
 minsk {
-    color:green
+    color:green;
+    cursor: pointer;
 }
 
 gomel {
-    color:red
+    color:red;
+    cursor: pointer;
 }
