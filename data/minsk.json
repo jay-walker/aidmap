@@ -1,0 +1,14 @@
+"locations":[
+    "country": [
+        {
+            "id": "BY",
+            "name": "belarus",
+            "cities": [
+                {
+                    "id": "3",
+                    "name": "gomel"
+                }
+            ]
+        }
+    ]
+]
