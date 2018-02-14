@@ -1,5 +1,9 @@
+html {
+    font-family: Calibri;
+}
+
 #aidmap {
     widows: 100%;
-    height: 800px;
+    height: 930px;
     background:grey
 }

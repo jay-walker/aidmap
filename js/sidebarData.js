@@ -1,6 +1,4 @@
-var test = {
-    infoWindowContent.click(function(){
-        $("#mySidenav").load("test.txt");
-        })
-
-}
+$(document).ready(function () {
+    $("#sidebarContainer").load("./data/sidebarData.html", function () {
+    });
+});
