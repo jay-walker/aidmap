@@ -6,7 +6,7 @@
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: rgb(235, 232, 232); /* Black*/
+    background-color: rgb(235, 232, 232);
     opacity: 0.9;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
@@ -47,4 +47,9 @@
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+.content {
+    padding: 0 20px 0 20px;
+    
 }
