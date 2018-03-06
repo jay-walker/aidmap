@@ -1,8 +1,8 @@
 function openNav(id) {
     jQuery("#sidebarContainer div.content").css("display", "none");
     document.getElementById("c" + id).style.display = "block";
-    document.getElementById("sideNav").style.width = "300px";
-    document.getElementById("aidmap").style.marginLeft = "300px";
+    document.getElementById("sideNav").style.width = "350px";
+    document.getElementById("aidmap").style.marginLeft = "350px";
 }
 
 function closeNav() {
