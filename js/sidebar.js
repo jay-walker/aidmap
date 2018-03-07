@@ -1,12 +1,11 @@
 function openNav(id) {
     jQuery("#sidebarContainer div.content").css("display", "none");
     document.getElementById("c" + id).style.display = "block";
-    document.getElementById("sideNav").style.width = "350px";
-    document.getElementById("aidmap").style.marginLeft = "350px";
+    document.getElementById("sideNav").style.marginLeft = "-10px";
+    document.getElementById("aidmap").style.marginLeft = "0px";
+    document.body.style.transform = "translateX(350px)";
 }
 
 function closeNav() {
-    document.getElementById("sideNav").style.width = "0";
-    document.getElementById("aidmap").style.marginLeft = "0";
-    document.getElementById("c" + id).style.display = "none";
+    document.body.style.transform = "translateX(0)";
 }

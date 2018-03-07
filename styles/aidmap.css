@@ -1,5 +1,12 @@
 html {
     font-family: Calibri;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+transition: .5s all;
 }
 
 #aidmap {
