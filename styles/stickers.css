@@ -1,0 +1,39 @@
+#stickers a {
+    z-index: 1;
+    position: absolute;
+    right: -92px;
+    transition: .5s;
+    padding: 15px 15px 15px 30px;
+    width: 120px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px 0 0 5px;
+    text-align: right;
+    transition-timing-function: ease-in-out;
+}
+
+#stickers a:hover {
+    right: 0;
+}
+
+#add {
+    top: 20px;
+    background-color: #828282;
+}
+
+#contact {
+    top: 80px;
+    background-color: #828282;
+}
+
+.sticker-text {
+    text-align: right; 
+}
+
+.icon {
+    position: absolute;
+    font-weight: bold;
+    font-size: 18px;
+}
+
