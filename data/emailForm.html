@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../styles/master.css">
+    <script defer src="../static/fontawesome-all.js"></script>
+</head>
+
+<body>
+    <form id="myform">
+        <label>sender</label>
+        <input type="text" name="sender"/>
+
+        <label>from_email</label>
+        <input type="text" name="from_email"/>
+
+        <label>message</label>
+        <input type="text" name="message"/>
+        <br>
+        <br>
+        <button>
+            Send
+        </button>
+    </form>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/emailForm.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_5kTaVC5xB1nPvqEvGilT8");
+        })();
+    </script>
+</body>
+
+</html>
