@@ -19,28 +19,63 @@
     </div>
 
     <div id="stickers" class="stickers">
-        <a href="data/emailForm.html" id="add">
+
+        <a href="#" id="sticker-add" class="add">
             <div class="icon">
                 <i class="fas fa-map-marker-alt"></i>
             </div>
-            <div class="sticker-text">Add a place</div>
+            <div id="sticker-link">Add a place</div>
+
+            <!-- add a place pop-up -->
+            <div id="addPlaceModal" class="modal">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>header</h2>
+                    </div>
+
+                    <div class="modal-body">
+                        <form id="addPlaceForm">
+                            <label>sender</label>
+                            <input type="text" name="sender"/>
+
+                            <label>from_email</label>
+                            <input type="text" name="from_email"/>
+
+                            <label>message</label>
+                            <input type="text" name="message"/>
+                            <br>
+                            <button>send</button>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <h3>footer</h3>
+                    </div>
+
+                </div>
+            </div>
         </a>
 
-        <a href="#" id="contact">
+        <a href="#" id="sticker-link1" class="contact">
             <div class="icon">
                 <i class="far fa-envelope-open"></i>
             </div>
-            <div class="sticker-text">Contact us</div>
+            <div id="sticker-link1">Contact us</div>
         </a>
     </div>
 
     <div id="sideNav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
         <div id="sidebarContainer"></div>
     </div>
 
     <div id="aidmap">
         <script src="js/curtain.js"></script>
+        <script src="js/emailForm.js"></script>
+        <script src="js/emailjs.js"></script>
+        <script src="js/stickerPopUp.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPuqL6hnbHt3uyGNm1ehkiR3_nwCVpZVs&language=en&callback=aidmap"></script>
         <script src="js/locations.js"></script>
         <script src="js/infoWindowContent.js"></script>

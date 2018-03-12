@@ -1,4 +1,4 @@
-var myform = $("form#myform");
+var myform = $("form#addPlaceForm");
 myform.submit(function(event){
 	event.preventDefault();
 
@@ -7,7 +7,6 @@ myform.submit(function(event){
      return obj;
   }, {});
 
-  // Change to your service ID, or keep using the default service
   var service_id = "aidmap_gmail";
   var template_id = "aidmap_gmail1";
   myform.find("button").text("Sending...");

@@ -17,17 +17,17 @@
     right: 0;
 }
 
-#add {
+.add {
     top: 20px;
     background-color: #828282;
 }
 
-#contact {
+.contact {
     top: 80px;
     background-color: #828282;
 }
 
-.sticker-text {
+#sticker-link {
     text-align: right; 
 }
 
