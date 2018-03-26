@@ -1,23 +1,22 @@
-// Get the modal
 var modal = document.getElementById('addPlaceModal');
 
-// Get the button that opens the modal
 var btn = document.getElementById("sticker-add");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var close = document.getElementById("close-pop-up");
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
+// open the pop-up when the user clicks the button
+btn.addEventListener('click', function(event) {
     modal.style.display = "block";
-}
+    }
+);
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+// close the pop-up when the user clicks on (x)
+close.onclick = function(event) {
     modal.style.display = "none";
+    event.stopPropagation();
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// close the pop-up when the user clicks anywhere outside it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";

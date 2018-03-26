@@ -19,51 +19,57 @@
     </div>
 
     <div id="stickers" class="stickers">
-
-        <a href="#" id="sticker-add" class="add">
-            <div class="icon">
-                <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div id="sticker-link">Add a place</div>
-
-            <!-- add a place pop-up -->
-            <div id="addPlaceModal" class="modal">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <span class="close">&times;</span>
-                        <h2>header</h2>
-                    </div>
-
-                    <div class="modal-body">
-                        <form id="addPlaceForm">
-                            <label>sender</label>
-                            <input type="text" name="sender"/>
-
-                            <label>from_email</label>
-                            <input type="text" name="from_email"/>
-
-                            <label>message</label>
-                            <input type="text" name="message"/>
-                            <br>
-                            <button>send</button>
-                        </form>
-                    </div>
-
-                    <div class="modal-footer">
-                        <h3>footer</h3>
-                    </div>
-
+        <div>
+            <a href="#" id="sticker-add" class="add">
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
                 </div>
-            </div>
-        </a>
+                <div id="sticker-link">Add a place</div>
+            </a>
+        </div>
 
-        <a href="#" id="sticker-link1" class="contact">
-            <div class="icon">
-                <i class="far fa-envelope-open"></i>
+        <div>
+            <a href="#" id="sticker-link1" class="contact">
+                <div class="icon">
+                    <i class="far fa-envelope-open"></i>
+                </div>
+                <div id="sticker-link1">Contact us</div>
+            </a>
+        </div>
+
+        <!-- add a place pop-up -->
+        <div id="addPlaceModal" class="modal">
+            <div class="modal-content">
+
+                <div id="close-pop-up" class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>header</h2>
+                </div>
+
+                <div class="modal-body">
+                    <form id="addPlaceForm">
+                        <label>Your name:</label>
+                        <input type="text" name="sender" />
+
+                        <label>Your contact email:</label>
+                        <input type="text" name="from_email" />
+
+                        <label>Information about the place you would like us to add on the Aidmap:</label>
+                        <input type="text" name="message" />
+                        <br>
+                        <button>send</button>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <h3>footer</h3>
+                </div>
+
             </div>
-            <div id="sticker-link1">Contact us</div>
-        </a>
+        </div>
+
+
+
     </div>
 
     <div id="sideNav" class="sidenav">
