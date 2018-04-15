@@ -39,37 +39,23 @@
 
         <!-- add a place pop-up -->
         <div id="addPlaceModal" class="modal">
-            <div class="modal-content">
-
-                <div id="close-pop-up" class="modal-header">
+            <div class="modal-content" >
+                <div id="close-pop-up">
                     <span class="close">&times;</span>
-                    <h2>header</h2>
                 </div>
+                <form id="addPlaceForm">
+                    <label>Your name:</label>
+                    <input type="text" name="sender" />
 
-                <div class="modal-body">
-                    <form id="addPlaceForm">
-                        <label>Your name:</label>
-                        <input type="text" name="sender" />
+                    <label>Your contact email:</label>
+                    <input type="text" name="from_email" />
 
-                        <label>Your contact email:</label>
-                        <input type="text" name="from_email" />
-
-                        <label>Information about the place you would like us to add on the Aidmap:</label>
-                        <input type="text" name="message" />
-                        <br>
-                        <button>send</button>
-                    </form>
-                </div>
-
-                <div class="modal-footer">
-                    <h3>footer</h3>
-                </div>
-
+                    <label>Any details about the place you would like to see on the Aidmap:</label>
+                    <textarea rows="4" name="message"></textarea>
+                    <button>send</button>
+                </form>
             </div>
         </div>
-
-
-
     </div>
 
     <div id="sideNav" class="sidenav">
