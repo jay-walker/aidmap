@@ -9,14 +9,19 @@ myform.submit(function(event){
 
   var service_id = "aidmap_gmail";
   var template_id = "aidmap_gmail1";
-  myform.find("button").text("Sending...");
+
+  $("#sendEmail").text("Sending...");
+
   emailjs.send(service_id,template_id,params)
   	.then(function(){ 
-       alert("Sent!");
-       myform.find("button").text("Send");
+       $("#sendEmail").text("Send");
+       $("#emailStatus").text("Thank you that you care. We'll come in contact with you soon.");
+       $("#addPlaceForm")[0].reset();
      }, function(err) {
-       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-       myform.find("button").text("Send");
+       $("#emailStatus").text("Sending failed\r\n Response:\n " + JSON.stringify(err))
+       emailStatus.style.color = "red";
+        
+       $("#sendEmail").text("Send");
     });
   return false;
 });

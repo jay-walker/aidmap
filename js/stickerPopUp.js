@@ -14,12 +14,16 @@ btn.addEventListener('click', function(event) {
 close.onclick = function(event) {
     modal.style.display = "none";
     event.stopPropagation();
+    $("#addPlaceForm")[0].reset();
+    $("#emailStatus").text("All fields are required");
 }
 
 // close the pop-up when the user clicks anywhere outside it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        $("#addPlaceForm")[0].reset();
+        $("#emailStatus").text("All fields are required");
     }
 }
 

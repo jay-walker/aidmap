@@ -62,3 +62,9 @@
     cursor: pointer;
 }
 
+#emailStatus {
+    color: #777;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
