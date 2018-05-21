@@ -19,27 +19,19 @@
     </div>
 
     <div id="stickers" class="stickers">
+        <!-- add a place sticker -->
         <div>
             <a href="#" id="sticker-add" class="add">
                 <div class="icon">
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
-                <div id="sticker-link">Add a place</div>
-            </a>
-        </div>
-
-        <div>
-            <a href="#" id="sticker-link1" class="contact">
-                <div class="icon">
-                    <i class="far fa-envelope-open"></i>
-                </div>
-                <div id="sticker-link1">Contact us</div>
+                <div id="sticker-add-link">Add a place</div>
             </a>
         </div>
 
         <!-- add a place pop-up -->
-        <div id="addPlaceModal" class="modal">
-            <div class="modal-content" >
+        <div id="addPlaceModal" class="add-modal">
+            <div class="add-modal-content" >
                 <div id="close-pop-up">
                     <span class="close">&times;</span>
                 </div>
@@ -58,6 +50,40 @@
                 </form>
             </div>
         </div>
+
+        <!-- contacts sticker -->
+        <div>
+            <a href="#" id="sticker-contacts" class="contact">
+                <div class="icon">
+                    <i class="far fa-envelope-open"></i>
+                </div>
+                <div id="sticker-contact-link">Contact us</div>
+            </a>
+        </div>
+
+        <!-- contacts pop-up -->
+        <div id="contactsModal" class="contacts-modal">
+            <div class="contacts-modal-content">
+                <div id="close-contacts-pop-up">
+                    <span class="close">&times;</span>
+                </div>
+                <form id="addPlaceForm">
+                    <label>Ask your question or provide your feedback by filling out the form</label>
+                    <label>Your name:</label>
+                    <input required type="text" name="sender" />
+
+                    <label>Your contact email:</label>
+                    <input required type="text" name="from_email" />
+
+                    <label>Your question or feedback:</label>
+                    <textarea required rows="4" name="message"></textarea>
+                    <button id="sendEmail">send</button>
+
+                    <div id="emailStatus">All fields are required</div>
+                </form>
+            </div>
+        </div>
+
     </div>
 
     <div id="sideNav" class="sidenav">
@@ -69,6 +95,7 @@
         <script src="js/curtain.js"></script>
         <script src="js/emailForm.js"></script>
         <script src="js/emailjs.js"></script>
+        <script src="js/contacts.js"></script>
         <script src="js/stickerPopUp.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPuqL6hnbHt3uyGNm1ehkiR3_nwCVpZVs&language=en&callback=aidmap"></script>
         <script src="js/locations.js"></script>
